@@ -1,4 +1,6 @@
 ActionParameterExample::Application.routes.draw do
+  resources :vacations
+
   resources :toys
 
   resources :products
