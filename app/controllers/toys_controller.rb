@@ -1,4 +1,5 @@
 class ToysController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_toy, only: [:show, :edit, :update, :destroy]
 
   # GET /toys
