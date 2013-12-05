@@ -1,4 +1,6 @@
 ActionParameterExample::Application.routes.draw do
+  resources :toys
+
   resources :products
 
   devise_for :users
