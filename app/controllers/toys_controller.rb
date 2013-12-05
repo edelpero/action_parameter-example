@@ -25,7 +25,7 @@ class ToysController < ApplicationController
   # POST /toys
   # POST /toys.json
   def create
-    @toy = Toy.new(toy_params)
+    @toy = Toy.new(resource_params.toy)
 
     respond_to do |format|
       if @toy.save
@@ -42,7 +42,7 @@ class ToysController < ApplicationController
   # PATCH/PUT /toys/1.json
   def update
     respond_to do |format|
-      if @toy.update(toy_params)
+      if @toy.update(resource_params.toy)
         format.html { redirect_to @toy, notice: 'Toy was successfully updated.' }
         format.json { head :no_content }
       else
