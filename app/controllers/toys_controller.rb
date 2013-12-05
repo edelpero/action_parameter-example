@@ -68,8 +68,4 @@ class ToysController < ApplicationController
       @toy = Toy.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def toy_params
-      params.require(:toy).permit(:name, :price, :hidden)
-    end
 end
