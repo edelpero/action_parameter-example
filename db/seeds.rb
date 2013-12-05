@@ -7,14 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 admin = User.create(
-  email: 'admin@action_parameter.com',
+  email: 'admin@parameter.com',
   password: 'asdasdasd',
   password_confirmation: 'asdasdasd',
   role: 'admin'
   )
 
 user = User.create(
-  email: 'user@action_parameter.com',
+  email: 'user@parameter.com',
   password: 'asdasdasd',
   password_confirmation: 'asdasdasd'
   )
